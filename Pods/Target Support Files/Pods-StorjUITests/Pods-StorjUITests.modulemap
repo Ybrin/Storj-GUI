@@ -1,0 +1,6 @@
+framework module Pods_StorjUITests {
+  umbrella header "Pods-StorjUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

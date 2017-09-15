@@ -13,6 +13,12 @@
 		0E05B6921F6A0846002B475D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E05B6901F6A0846002B475D /* Main.storyboard */; };
 		0E05B69D1F6A0846002B475D /* StorjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E05B69C1F6A0846002B475D /* StorjTests.swift */; };
 		0E05B6A81F6A0846002B475D /* StorjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E05B6A71F6A0846002B475D /* StorjUITests.swift */; };
+		0E245A7D1F6AD7B900F066FA /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E245A7C1F6AD7B900F066FA /* LabelExtensions.swift */; };
+		0E245A7F1F6C494400F066FA /* HyperlinkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E245A7E1F6C494400F066FA /* HyperlinkTextField.swift */; };
+		0E245A811F6C4CB100F066FA /* register.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E245A801F6C4CB100F066FA /* register.html */; };
+		2CAD0C86E1653280BF6C1802 /* Pods_Storj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C51D0DB167AC88A471B4D /* Pods_Storj.framework */; };
+		3885E9D08D4E598188839D90 /* Pods_StorjTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC0036498004C9F3BAEA8E /* Pods_StorjTests.framework */; };
+		ADE9EA5E13A57545AB0EC39D /* Pods_StorjUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8644DDEA6666DD366CBDED6 /* Pods_StorjUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DC0036498004C9F3BAEA8E /* Pods_StorjTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorjTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E05B6871F6A0846002B475D /* Storj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E05B68A1F6A0846002B475D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E05B68C1F6A0846002B475D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +52,17 @@
 		0E05B6A31F6A0846002B475D /* StorjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E05B6A71F6A0846002B475D /* StorjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjUITests.swift; sourceTree = "<group>"; };
 		0E05B6A91F6A0846002B475D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E245A7C1F6AD7B900F066FA /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
+		0E245A7E1F6C494400F066FA /* HyperlinkTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkTextField.swift; sourceTree = "<group>"; };
+		0E245A801F6C4CB100F066FA /* register.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = register.html; sourceTree = "<group>"; };
+		219C08206A786EA65438BEEF /* Pods-Storj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storj.release.xcconfig"; path = "Pods/Target Support Files/Pods-Storj/Pods-Storj.release.xcconfig"; sourceTree = "<group>"; };
+		235DA07BE563AE7AF35FDC2B /* Pods-StorjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorjTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StorjTests/Pods-StorjTests.release.xcconfig"; sourceTree = "<group>"; };
+		350C51D0DB167AC88A471B4D /* Pods_Storj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7057AF1F5D069DE5EDF65A0E /* Pods-Storj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Storj/Pods-Storj.debug.xcconfig"; sourceTree = "<group>"; };
+		9757474E945D7DA93FC34121 /* Pods-StorjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorjTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StorjTests/Pods-StorjTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB319C3AD31130F8BA5D27FF /* Pods-StorjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StorjUITests/Pods-StorjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C16BEE97D5563107A65E2E16 /* Pods-StorjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorjUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StorjUITests/Pods-StorjUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8644DDEA6666DD366CBDED6 /* Pods_StorjUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorjUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAD0C86E1653280BF6C1802 /* Pods_Storj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3885E9D08D4E598188839D90 /* Pods_StorjTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE9EA5E13A57545AB0EC39D /* Pods_StorjUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,8 @@
 				0E05B69B1F6A0846002B475D /* StorjTests */,
 				0E05B6A61F6A0846002B475D /* StorjUITests */,
 				0E05B6881F6A0846002B475D /* Products */,
+				D55C8F59B332AC2CCB5D3E81 /* Pods */,
+				9ECDBCC0BE5FD5E5A6546E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +118,10 @@
 		0E05B6891F6A0846002B475D /* Storj */ = {
 			isa = PBXGroup;
 			children = (
+				0E245A7B1F6AD77D00F066FA /* LoginModule */,
+				0E245A7A1F6AD76400F066FA /* Resources */,
+				0E245A791F6AD73B00F066FA /* Toolbox */,
 				0E05B68A1F6A0846002B475D /* AppDelegate.swift */,
-				0E05B68C1F6A0846002B475D /* ViewController.swift */,
-				0E05B68E1F6A0846002B475D /* Assets.xcassets */,
-				0E05B6901F6A0846002B475D /* Main.storyboard */,
-				0E05B6931F6A0846002B475D /* Info.plist */,
 			);
 			path = Storj;
 			sourceTree = "<group>";
@@ -122,6 +144,57 @@
 			path = StorjUITests;
 			sourceTree = "<group>";
 		};
+		0E245A791F6AD73B00F066FA /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				0E245A7C1F6AD7B900F066FA /* LabelExtensions.swift */,
+				0E245A7E1F6C494400F066FA /* HyperlinkTextField.swift */,
+			);
+			name = Toolbox;
+			sourceTree = "<group>";
+		};
+		0E245A7A1F6AD76400F066FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E05B68E1F6A0846002B475D /* Assets.xcassets */,
+				0E05B6931F6A0846002B475D /* Info.plist */,
+				0E245A801F6C4CB100F066FA /* register.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0E245A7B1F6AD77D00F066FA /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				0E05B6901F6A0846002B475D /* Main.storyboard */,
+				0E05B68C1F6A0846002B475D /* ViewController.swift */,
+			);
+			name = LoginModule;
+			sourceTree = "<group>";
+		};
+		9ECDBCC0BE5FD5E5A6546E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				350C51D0DB167AC88A471B4D /* Pods_Storj.framework */,
+				04DC0036498004C9F3BAEA8E /* Pods_StorjTests.framework */,
+				F8644DDEA6666DD366CBDED6 /* Pods_StorjUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D55C8F59B332AC2CCB5D3E81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7057AF1F5D069DE5EDF65A0E /* Pods-Storj.debug.xcconfig */,
+				219C08206A786EA65438BEEF /* Pods-Storj.release.xcconfig */,
+				9757474E945D7DA93FC34121 /* Pods-StorjTests.debug.xcconfig */,
+				235DA07BE563AE7AF35FDC2B /* Pods-StorjTests.release.xcconfig */,
+				BB319C3AD31130F8BA5D27FF /* Pods-StorjUITests.debug.xcconfig */,
+				C16BEE97D5563107A65E2E16 /* Pods-StorjUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E05B6AC1F6A0846002B475D /* Build configuration list for PBXNativeTarget "Storj" */;
 			buildPhases = (
+				3ACA570C11F6E9DBE1AE1159 /* [CP] Check Pods Manifest.lock */,
 				0E05B6831F6A0846002B475D /* Sources */,
 				0E05B6841F6A0846002B475D /* Frameworks */,
 				0E05B6851F6A0846002B475D /* Resources */,
+				98DBE3F77E2C81C16C89B56C /* [CP] Embed Pods Frameworks */,
+				95630947C533647FA8F779C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E05B6AF1F6A0846002B475D /* Build configuration list for PBXNativeTarget "StorjTests" */;
 			buildPhases = (
+				2EEC305E8F1C480E9E85AC1C /* [CP] Check Pods Manifest.lock */,
 				0E05B6941F6A0846002B475D /* Sources */,
 				0E05B6951F6A0846002B475D /* Frameworks */,
 				0E05B6961F6A0846002B475D /* Resources */,
+				BCD42FE810B6FF2A049E712D /* [CP] Embed Pods Frameworks */,
+				C16B82DD83080208B260A145 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E05B6B21F6A0846002B475D /* Build configuration list for PBXNativeTarget "StorjUITests" */;
 			buildPhases = (
+				17A730E641A24F6D6FB7DBAD /* [CP] Check Pods Manifest.lock */,
 				0E05B69F1F6A0846002B475D /* Sources */,
 				0E05B6A01F6A0846002B475D /* Frameworks */,
 				0E05B6A11F6A0846002B475D /* Resources */,
+				8B377E025D170FC987373066 /* [CP] Embed Pods Frameworks */,
+				1BE4A739CBC5ABE4B8A4AE92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E05B68F1F6A0846002B475D /* Assets.xcassets in Resources */,
+				0E245A811F6C4CB100F066FA /* register.html in Resources */,
 				0E05B6921F6A0846002B475D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +333,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17A730E641A24F6D6FB7DBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StorjUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE4A739CBC5ABE4B8A4AE92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StorjUITests/Pods-StorjUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EEC305E8F1C480E9E85AC1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StorjTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ACA570C11F6E9DBE1AE1159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Storj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B377E025D170FC987373066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StorjUITests/Pods-StorjUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95630947C533647FA8F779C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Storj/Pods-Storj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98DBE3F77E2C81C16C89B56C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Storj/Pods-Storj-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Storj/Pods-Storj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD42FE810B6FF2A049E712D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StorjTests/Pods-StorjTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16B82DD83080208B260A145 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StorjTests/Pods-StorjTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E05B6831F6A0846002B475D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +490,8 @@
 			files = (
 				0E05B68D1F6A0846002B475D /* ViewController.swift in Sources */,
 				0E05B68B1F6A0846002B475D /* AppDelegate.swift in Sources */,
+				0E245A7F1F6C494400F066FA /* HyperlinkTextField.swift in Sources */,
+				0E245A7D1F6AD7B900F066FA /* LabelExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,11 +632,13 @@
 		};
 		0E05B6AD1F6A0846002B475D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7057AF1F5D069DE5EDF65A0E /* Pods-Storj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Storj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.Storj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -410,11 +647,13 @@
 		};
 		0E05B6AE1F6A0846002B475D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219C08206A786EA65438BEEF /* Pods-Storj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Storj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.Storj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -423,6 +662,7 @@
 		};
 		0E05B6B01F6A0846002B475D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9757474E945D7DA93FC34121 /* Pods-StorjTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -438,6 +678,7 @@
 		};
 		0E05B6B11F6A0846002B475D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235DA07BE563AE7AF35FDC2B /* Pods-StorjTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -453,6 +694,7 @@
 		};
 		0E05B6B31F6A0846002B475D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB319C3AD31130F8BA5D27FF /* Pods-StorjUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -467,6 +709,7 @@
 		};
 		0E05B6B41F6A0846002B475D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16BEE97D5563107A65E2E16 /* Pods-StorjUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -498,6 +741,7 @@
 				0E05B6AE1F6A0846002B475D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E05B6AF1F6A0846002B475D /* Build configuration list for PBXNativeTarget "StorjTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +750,7 @@
 				0E05B6B11F6A0846002B475D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E05B6B21F6A0846002B475D /* Build configuration list for PBXNativeTarget "StorjUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +759,7 @@
 				0E05B6B41F6A0846002B475D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

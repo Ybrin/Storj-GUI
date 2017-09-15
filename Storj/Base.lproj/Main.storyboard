@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="12121"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,19 +658,19 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Storj" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="75" y="-146"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Storj" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="854" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -679,15 +684,142 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Storj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="854" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3fh-fJ-EWL">
+                                <rect key="frame" x="0.0" y="0.0" width="854" height="480"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="V9b-LT-Hxb">
+                                <rect key="frame" x="320" y="72" width="214" height="336"/>
+                                <view key="contentView" id="1Z2-nC-rh7">
+                                    <rect key="frame" x="1" y="1" width="212" height="334"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="EAW-GU-I3W">
+                                            <rect key="frame" x="16" y="16" width="180" height="97"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-Yk-rsz">
+                                                    <rect key="frame" x="0.0" y="75" width="180" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="Gvk-L6-LWw"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Email" drawsBackground="YES" id="CHI-Y7-lwr">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <secureTextField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-iv-QDO">
+                                                    <rect key="frame" x="0.0" y="37" width="180" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="nod-kv-yho"/>
+                                                    </constraints>
+                                                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="cp1-EU-VqJ">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        <allowedInputSourceLocales>
+                                                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                        </allowedInputSourceLocales>
+                                                    </secureTextFieldCell>
+                                                </secureTextField>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-Df-Gcj">
+                                                    <rect key="frame" x="105" y="-7" width="81" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="bOy-PK-wwq"/>
+                                                        <constraint firstAttribute="width" constant="69" id="px3-01-HYi"/>
+                                                    </constraints>
+                                                    <buttonCell key="cell" type="push" title="Login" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2RQ-EY-TtB">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                </button>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-83-NP5" customClass="HyperlinkTextField" customModule="Storj" customModuleProvider="target">
+                                                    <rect key="frame" x="-2" y="0.0" width="52" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="UOW-Nc-yhb"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sign Up" id="MZR-fo-cat">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="href" value="https://app.storj.io/signup"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MLa-Yk-rsz" firstAttribute="top" secondItem="EAW-GU-I3W" secondAttribute="top" id="2Nm-LS-pIs"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vy6-83-NP5" secondAttribute="bottom" id="9bb-Tf-45j"/>
+                                                <constraint firstItem="Vy6-83-NP5" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="AkQ-Ln-vva"/>
+                                                <constraint firstItem="dUO-iv-QDO" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="FON-Pq-VFa"/>
+                                                <constraint firstItem="dUO-iv-QDO" firstAttribute="top" secondItem="MLa-Yk-rsz" secondAttribute="bottom" constant="16" id="PLf-3G-jey"/>
+                                                <constraint firstItem="MLa-Yk-rsz" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="Pwy-YL-ZAK"/>
+                                                <constraint firstAttribute="trailing" secondItem="dgo-Df-Gcj" secondAttribute="trailing" id="QHh-TR-yCh"/>
+                                                <constraint firstAttribute="trailing" secondItem="dUO-iv-QDO" secondAttribute="trailing" id="dH8-79-iVA"/>
+                                                <constraint firstAttribute="trailing" secondItem="MLa-Yk-rsz" secondAttribute="trailing" id="ghR-CG-IBS"/>
+                                                <constraint firstAttribute="bottom" secondItem="dgo-Df-Gcj" secondAttribute="bottom" id="h0K-Xy-qhE"/>
+                                                <constraint firstItem="dgo-Df-Gcj" firstAttribute="top" secondItem="dUO-iv-QDO" secondAttribute="bottom" constant="16" id="uZr-p8-srn"/>
+                                            </constraints>
+                                        </customView>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Voe-oK-lAu">
+                                            <rect key="frame" x="0.0" y="113" width="212" height="221"/>
+                                            <subviews>
+                                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sou-0I-4Zp">
+                                                    <rect key="frame" x="16" y="63" width="180" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Sou-0I-4Zp" secondAttribute="height" multiplier="1200/630" id="1nd-B1-o1N"/>
+                                                    </constraints>
+                                                </customView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Sou-0I-4Zp" firstAttribute="centerY" secondItem="Voe-oK-lAu" secondAttribute="centerY" id="9H7-x6-Y6g"/>
+                                                <constraint firstItem="Sou-0I-4Zp" firstAttribute="leading" secondItem="Voe-oK-lAu" secondAttribute="leading" constant="16" id="UYa-Jf-44i"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sou-0I-4Zp" secondAttribute="trailing" constant="16" id="cdO-nA-taB"/>
+                                            </constraints>
+                                        </customView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="EAW-GU-I3W" secondAttribute="bottom" constant="16" id="F2X-6q-dfM"/>
+                                        <constraint firstItem="Voe-oK-lAu" firstAttribute="top" secondItem="1Z2-nC-rh7" secondAttribute="top" id="N7H-3j-kk1"/>
+                                        <constraint firstItem="EAW-GU-I3W" firstAttribute="top" secondItem="Voe-oK-lAu" secondAttribute="bottom" id="dqb-12-Dtw"/>
+                                        <constraint firstItem="EAW-GU-I3W" firstAttribute="leading" secondItem="1Z2-nC-rh7" secondAttribute="leading" constant="16" id="ebp-ae-IJn"/>
+                                        <constraint firstAttribute="trailing" secondItem="EAW-GU-I3W" secondAttribute="trailing" constant="16" id="hlK-e7-tfA"/>
+                                        <constraint firstItem="Voe-oK-lAu" firstAttribute="leading" secondItem="1Z2-nC-rh7" secondAttribute="leading" id="piB-YJ-UPz"/>
+                                        <constraint firstAttribute="trailing" secondItem="Voe-oK-lAu" secondAttribute="trailing" id="q5a-FG-QKB"/>
+                                    </constraints>
+                                </view>
+                                <color key="fillColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3fh-fJ-EWL" secondAttribute="bottom" id="C2p-9p-FFl"/>
+                            <constraint firstItem="3fh-fJ-EWL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="HLu-FE-owo"/>
+                            <constraint firstItem="V9b-LT-Hxb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="LCc-wX-KvE"/>
+                            <constraint firstItem="V9b-LT-Hxb" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="QQI-4Y-ksR"/>
+                            <constraint firstItem="3fh-fJ-EWL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="STK-a8-CLx"/>
+                            <constraint firstItem="V9b-LT-Hxb" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="1/4" id="bzP-6U-exS"/>
+                            <constraint firstItem="V9b-LT-Hxb" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.7" id="oer-yq-hoV"/>
+                            <constraint firstAttribute="trailing" secondItem="3fh-fJ-EWL" secondAttribute="trailing" id="zTJ-ih-90c"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="registerLabel" destination="MZR-fo-cat" id="3cd-Ad-PDg"/>
+                        <outlet property="storjLogoContainer" destination="Sou-0I-4Zp" id="VIF-Ir-dIJ"/>
+                        <outlet property="webView" destination="3fh-fJ-EWL" id="v2h-FR-42g"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="940"/>
         </scene>
     </scenes>
 </document>
