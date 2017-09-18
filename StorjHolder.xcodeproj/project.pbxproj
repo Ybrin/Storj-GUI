@@ -47,6 +47,7 @@
 		0E23E43B1F7020AE00C6B6E4 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */; };
 		0E23E43C1F7020AE00C6B6E4 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E23E43F1F70210300C6B6E4 /* Cartography.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E23E43E1F70210300C6B6E4 /* Cartography.framework.dSYM */; };
+		0E34D3421F705AA20020B486 /* ConstantHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34D3411F705AA20020B486 /* ConstantHolder.swift */; };
 		OBJ_100 /* StorjBucketMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* StorjBucketMeta.swift */; };
 		OBJ_101 /* StorjEncryptOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* StorjEncryptOptions.swift */; };
 		OBJ_102 /* StorjEncryptionCtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* StorjEncryptionCtx.swift */; };
@@ -203,6 +204,7 @@
 		0E23E4351F701EE700C6B6E4 /* register.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = register.html; sourceTree = "<group>"; };
 		0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/Mac/Cartography.framework; sourceTree = "<group>"; };
 		0E23E43E1F70210300C6B6E4 /* Cartography.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Cartography.framework.dSYM; path = Carthage/Build/Mac/Cartography.framework.dSYM; sourceTree = "<group>"; };
+		0E34D3411F705AA20020B486 /* ConstantHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantHolder.swift; sourceTree = "<group>"; };
 		"LibStorj::LibStorj::Product" /* LibStorj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LibStorj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* StorjHolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjHolderTests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* JsonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonObject.swift; sourceTree = "<group>"; };
@@ -297,15 +299,10 @@
 		0E23E3FA1F7011CE00C6B6E4 /* Storj */ = {
 			isa = PBXGroup;
 			children = (
-				0E23E4321F701EE700C6B6E4 /* HyperlinkTextField.swift */,
-				0E23E4331F701EE700C6B6E4 /* LabelExtensions.swift */,
-				0E23E4351F701EE700C6B6E4 /* register.html */,
 				0E23E3FB1F7011CE00C6B6E4 /* AppDelegate.swift */,
-				0E23E3FD1F7011CE00C6B6E4 /* ViewController.swift */,
-				0E23E3FF1F7011CE00C6B6E4 /* Assets.xcassets */,
-				0E23E4011F7011CE00C6B6E4 /* Main.storyboard */,
-				0E23E4041F7011CE00C6B6E4 /* Info.plist */,
-				0E23E4051F7011CE00C6B6E4 /* Storj.entitlements */,
+				0E34D3401F7058EE0020B486 /* Resources */,
+				0E34D33E1F7058C20020B486 /* RegisterModule */,
+				0E34D33F1F7058D70020B486 /* Toolbox */,
 			);
 			path = Storj;
 			sourceTree = "<group>";
@@ -326,6 +323,36 @@
 				0E23E41B1F7011CE00C6B6E4 /* Info.plist */,
 			);
 			path = StorjUITests;
+			sourceTree = "<group>";
+		};
+		0E34D33E1F7058C20020B486 /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+				0E23E4011F7011CE00C6B6E4 /* Main.storyboard */,
+				0E23E3FD1F7011CE00C6B6E4 /* ViewController.swift */,
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		0E34D33F1F7058D70020B486 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				0E34D3411F705AA20020B486 /* ConstantHolder.swift */,
+				0E23E4321F701EE700C6B6E4 /* HyperlinkTextField.swift */,
+				0E23E4331F701EE700C6B6E4 /* LabelExtensions.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		0E34D3401F7058EE0020B486 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E23E3FF1F7011CE00C6B6E4 /* Assets.xcassets */,
+				0E23E4041F7011CE00C6B6E4 /* Info.plist */,
+				0E23E4051F7011CE00C6B6E4 /* Storj.entitlements */,
+				0E23E4351F701EE700C6B6E4 /* register.html */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -719,6 +746,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E34D3421F705AA20020B486 /* ConstantHolder.swift in Sources */,
 				0E23E4371F701EE800C6B6E4 /* LabelExtensions.swift in Sources */,
 				0E23E3FE1F7011CE00C6B6E4 /* ViewController.swift in Sources */,
 				0E23E3FC1F7011CE00C6B6E4 /* AppDelegate.swift in Sources */,
@@ -916,7 +944,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Storj/Storj.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Storj/Resources/Storj.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -943,7 +971,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
 				);
-				INFOPLIST_FILE = Storj/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Storj/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -985,7 +1013,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Storj/Storj.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Storj/Resources/Storj.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1008,7 +1036,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
 				);
-				INFOPLIST_FILE = Storj/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Storj/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;

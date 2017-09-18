@@ -21,10 +21,20 @@ class ViewController: NSViewController {
 
     var webView: WKWebView!
 
+    var libStorj: LibStorj!
+
     // MARK - Initialization
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Setup LibStorj
+        let b = StorjBridgeOptions(
+            proto: ConstantHolder.APIValues.apiProto,
+            host: ConstantHolder.APIValues.apiUrl,
+            port: ConstantHolder.APIValues.apiPort
+        )
+        libStorj = LibStorj(bridgeOptions: b)
 
         // Setup UI
         setupUI()
@@ -41,9 +51,6 @@ class ViewController: NSViewController {
     func setupUI() {
         // Setup Storj Logo
         setupStorjLogo()
-
-        // Setup Register button
-        setupRegisterButton()
 
         // Setup WebView
         setupWebView()
@@ -71,25 +78,11 @@ class ViewController: NSViewController {
         }
     }
 
-    func setupRegisterButton() {
-        /*
-        let registerText = "Sign Up"
-        let registerTextRange = NSMakeRange(0, registerText.characters.count)
-        let color = NSColor(red: 0, green: 0, blue: 238/255, alpha: 1)
-
-        let attributedRegisterText = NSMutableAttributedString(string: registerText)
-        attributedRegisterText.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.styleSingle.rawValue, range: registerTextRange)
-        attributedRegisterText.addAttribute(NSLinkAttributeName, value: "https://app.storj.io/signup", range: registerTextRange)
-        attributedRegisterText.addAttribute(NSForegroundColorAttributeName, value: color, range: registerTextRange)
-
-        registerLabel.attributedStringValue = attributedRegisterText
-         */
-    }
-
     func setupWebView() {
         webView = WKWebView()
         view.addSubview(webView, positioned: .below, relativeTo: loginBox)
 
+        // Position WebView
         constrain(view, webView) { (view, web) in
             web.left == view.left
             web.right == view.right
@@ -107,12 +100,6 @@ class ViewController: NSViewController {
         }
 
         webView.loadHTMLString(htmlString, baseURL: nil)
-
-        /*
-        // Load particles into background
-        if let url = URL(string: "http://127.0.0.1:8080/index.html") {
-            webView.load(URLRequest(url: url))
-        }*/
     }
 
     // MARK: - Actions
