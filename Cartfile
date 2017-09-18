@@ -1,0 +1,4 @@
+# Carthage dependencies
+
+# Cartography
+github "robb/Cartography" ~> 1.0.1

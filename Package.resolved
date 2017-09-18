@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CLibStorj",
+        "repositoryURL": "https://github.com/Ybrin/CLibStorj.git",
+        "state": {
+          "branch": null,
+          "revision": "e075e752f83d77eb7a242dbe3ce2d9fc17a34138",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "LibStorj",
+        "repositoryURL": "https://github.com/Ybrin/LibStorjSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "bc8cf42698743dfecb0ab1fb145a5d8b2f055634",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "dadbfcffd5f51e2b488a26e83f188d96755e5393",
+          "version": "3.1.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

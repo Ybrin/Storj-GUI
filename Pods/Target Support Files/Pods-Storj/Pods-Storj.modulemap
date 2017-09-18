@@ -1,6 +1,0 @@
-framework module Pods_Storj {
-  umbrella header "Pods-Storj-umbrella.h"
-
-  export *
-  module * { export * }
-}

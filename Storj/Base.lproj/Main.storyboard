@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="12121"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="box content view" minToolsVersion="7.0"/>
@@ -672,6 +672,9 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="854" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="sQH-N9-MZA"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -689,13 +692,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="854" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3fh-fJ-EWL">
-                                <rect key="frame" x="0.0" y="0.0" width="854" height="480"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="V9b-LT-Hxb">
                                 <rect key="frame" x="320" y="72" width="214" height="336"/>
                                 <view key="contentView" id="1Z2-nC-rh7">
@@ -705,7 +701,7 @@
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="EAW-GU-I3W">
                                             <rect key="frame" x="16" y="16" width="180" height="97"/>
                                             <subviews>
-                                                <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-Yk-rsz">
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-Yk-rsz">
                                                     <rect key="frame" x="0.0" y="75" width="180" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="Gvk-L6-LWw"/>
@@ -716,7 +712,7 @@
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <secureTextField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-iv-QDO">
+                                                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-iv-QDO">
                                                     <rect key="frame" x="0.0" y="37" width="180" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="nod-kv-yho"/>
@@ -740,8 +736,11 @@
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="loginButtonClicked:" target="XfG-lQ-9wD" id="YzG-CW-Q2c"/>
+                                                    </connections>
                                                 </button>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-83-NP5" customClass="HyperlinkTextField" customModule="Storj" customModuleProvider="target">
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-83-NP5" customClass="HyperlinkTextField" customModule="Storj" customModuleProvider="target">
                                                     <rect key="frame" x="-2" y="0.0" width="52" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="UOW-Nc-yhb"/>
@@ -801,20 +800,16 @@
                             </box>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="3fh-fJ-EWL" secondAttribute="bottom" id="C2p-9p-FFl"/>
-                            <constraint firstItem="3fh-fJ-EWL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="HLu-FE-owo"/>
                             <constraint firstItem="V9b-LT-Hxb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="LCc-wX-KvE"/>
                             <constraint firstItem="V9b-LT-Hxb" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="QQI-4Y-ksR"/>
-                            <constraint firstItem="3fh-fJ-EWL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="STK-a8-CLx"/>
                             <constraint firstItem="V9b-LT-Hxb" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="1/4" id="bzP-6U-exS"/>
                             <constraint firstItem="V9b-LT-Hxb" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.7" id="oer-yq-hoV"/>
-                            <constraint firstAttribute="trailing" secondItem="3fh-fJ-EWL" secondAttribute="trailing" id="zTJ-ih-90c"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginBox" destination="V9b-LT-Hxb" id="6o2-ZX-6s0"/>
                         <outlet property="registerLabel" destination="MZR-fo-cat" id="3cd-Ad-PDg"/>
                         <outlet property="storjLogoContainer" destination="Sou-0I-4Zp" id="VIF-Ir-dIJ"/>
-                        <outlet property="webView" destination="3fh-fJ-EWL" id="v2h-FR-42g"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -1,0 +1,1763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"CLibStorj::CLibStorj::ProductTarget" /* CLibStorj */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_124 /* Build configuration list for PBXAggregateTarget "CLibStorj" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = CLibStorj;
+			productName = CLibStorj;
+		};
+		"StorjHolder::StorjHolderPackageTests::ProductTarget" /* StorjHolderPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_119 /* Build configuration list for PBXAggregateTarget "StorjHolderPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_122 /* PBXTargetDependency */,
+			);
+			name = StorjHolderPackageTests;
+			productName = StorjHolderPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0E23E3FC1F7011CE00C6B6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E3FB1F7011CE00C6B6E4 /* AppDelegate.swift */; };
+		0E23E3FE1F7011CE00C6B6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E3FD1F7011CE00C6B6E4 /* ViewController.swift */; };
+		0E23E4001F7011CE00C6B6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E23E3FF1F7011CE00C6B6E4 /* Assets.xcassets */; };
+		0E23E4031F7011CE00C6B6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E23E4011F7011CE00C6B6E4 /* Main.storyboard */; };
+		0E23E40F1F7011CE00C6B6E4 /* StorjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E40E1F7011CE00C6B6E4 /* StorjTests.swift */; };
+		0E23E41A1F7011CE00C6B6E4 /* StorjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E4191F7011CE00C6B6E4 /* StorjUITests.swift */; };
+		0E23E4251F70120D00C6B6E4 /* LibStorj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LibStorj::LibStorj::Product" /* LibStorj.framework */; };
+		0E23E4261F70120D00C6B6E4 /* LibStorj.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "LibStorj::LibStorj::Product" /* LibStorj.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E23E42E1F701ABC00C6B6E4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		0E23E42F1F701ABC00C6B6E4 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E23E4361F701EE800C6B6E4 /* HyperlinkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E4321F701EE700C6B6E4 /* HyperlinkTextField.swift */; };
+		0E23E4371F701EE800C6B6E4 /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E23E4331F701EE700C6B6E4 /* LabelExtensions.swift */; };
+		0E23E4391F701EE800C6B6E4 /* register.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E23E4351F701EE700C6B6E4 /* register.html */; };
+		0E23E43B1F7020AE00C6B6E4 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */; };
+		0E23E43C1F7020AE00C6B6E4 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E23E43F1F70210300C6B6E4 /* Cartography.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E23E43E1F70210300C6B6E4 /* Cartography.framework.dSYM */; };
+		OBJ_100 /* StorjBucketMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* StorjBucketMeta.swift */; };
+		OBJ_101 /* StorjEncryptOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* StorjEncryptOptions.swift */; };
+		OBJ_102 /* StorjEncryptionCtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* StorjEncryptionCtx.swift */; };
+		OBJ_103 /* StorjEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* StorjEnv.swift */; };
+		OBJ_104 /* StorjFileMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* StorjFileMeta.swift */; };
+		OBJ_105 /* StorjHTTPOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* StorjHTTPOptions.swift */; };
+		OBJ_106 /* StorjLogLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* StorjLogLevels.swift */; };
+		OBJ_107 /* StorjLogOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* StorjLogOptions.swift */; };
+		OBJ_108 /* StorjUploadOpts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* StorjUploadOpts.swift */; };
+		OBJ_110 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_116 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SwiftyJSON.swift */; };
+		OBJ_49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Package.swift */; };
+		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
+		OBJ_67 /* StorjHolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* StorjHolderTests.swift */; };
+		OBJ_69 /* StorjHolder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "StorjHolder::StorjHolder::Product" /* StorjHolder.framework */; };
+		OBJ_70 /* LibStorj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LibStorj::LibStorj::Product" /* LibStorj.framework */; };
+		OBJ_71 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_82 /* StorjHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* StorjHolder.swift */; };
+		OBJ_84 /* LibStorj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LibStorj::LibStorj::Product" /* LibStorj.framework */; };
+		OBJ_85 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_92 /* JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JsonObject.swift */; };
+		OBJ_93 /* LibStorj.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* LibStorj.swift */; };
+		OBJ_94 /* CStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* CStruct.swift */; };
+		OBJ_95 /* CreateBucketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* CreateBucketRequest.swift */; };
+		OBJ_96 /* GetBucketsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* GetBucketsRequest.swift */; };
+		OBJ_97 /* JsonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* JsonRequest.swift */; };
+		OBJ_98 /* ListFilesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ListFilesRequest.swift */; };
+		OBJ_99 /* StorjBridgeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* StorjBridgeOptions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E23E3EE1F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LibStorj::LibStorj";
+			remoteInfo = LibStorj;
+		};
+		0E23E3EF1F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		0E23E3F01F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		0E23E3F11F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "StorjHolder::StorjHolder";
+			remoteInfo = StorjHolder;
+		};
+		0E23E3F21F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LibStorj::LibStorj";
+			remoteInfo = LibStorj;
+		};
+		0E23E3F31F7011B200C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+		0E23E3F41F7011B300C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "StorjHolder::StorjHolderTests";
+			remoteInfo = StorjHolderTests;
+		};
+		0E23E40B1F7011CE00C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E23E3F81F7011CE00C6B6E4;
+			remoteInfo = Storj;
+		};
+		0E23E4161F7011CE00C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E23E3F81F7011CE00C6B6E4;
+			remoteInfo = Storj;
+		};
+		0E23E4271F70120D00C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "LibStorj::LibStorj";
+			remoteInfo = LibStorj;
+		};
+		0E23E4301F701ABC00C6B6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E23E4291F70120D00C6B6E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E23E42F1F701ABC00C6B6E4 /* SwiftyJSON.framework in Embed Frameworks */,
+				0E23E4261F70120D00C6B6E4 /* LibStorj.framework in Embed Frameworks */,
+				0E23E43C1F7020AE00C6B6E4 /* Cartography.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E43D1F7020D000C6B6E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0E23E43F1F70210300C6B6E4 /* Cartography.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E23E3F91F7011CE00C6B6E4 /* Storj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E23E3FB1F7011CE00C6B6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E23E3FD1F7011CE00C6B6E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E23E3FF1F7011CE00C6B6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E23E4021F7011CE00C6B6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E23E4041F7011CE00C6B6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E23E4051F7011CE00C6B6E4 /* Storj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Storj.entitlements; sourceTree = "<group>"; };
+		0E23E40A1F7011CE00C6B6E4 /* StorjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E23E40E1F7011CE00C6B6E4 /* StorjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjTests.swift; sourceTree = "<group>"; };
+		0E23E4101F7011CE00C6B6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E23E4151F7011CE00C6B6E4 /* StorjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E23E4191F7011CE00C6B6E4 /* StorjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjUITests.swift; sourceTree = "<group>"; };
+		0E23E41B1F7011CE00C6B6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E23E4321F701EE700C6B6E4 /* HyperlinkTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperlinkTextField.swift; sourceTree = "<group>"; };
+		0E23E4331F701EE700C6B6E4 /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
+		0E23E4351F701EE700C6B6E4 /* register.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = register.html; sourceTree = "<group>"; };
+		0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/Mac/Cartography.framework; sourceTree = "<group>"; };
+		0E23E43E1F70210300C6B6E4 /* Cartography.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Cartography.framework.dSYM; path = Carthage/Build/Mac/Cartography.framework.dSYM; sourceTree = "<group>"; };
+		"LibStorj::LibStorj::Product" /* LibStorj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LibStorj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* StorjHolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjHolderTests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* JsonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonObject.swift; sourceTree = "<group>"; };
+		OBJ_18 /* LibStorj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibStorj.swift; sourceTree = "<group>"; };
+		OBJ_20 /* CStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CStruct.swift; sourceTree = "<group>"; };
+		OBJ_21 /* CreateBucketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBucketRequest.swift; sourceTree = "<group>"; };
+		OBJ_22 /* GetBucketsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBucketsRequest.swift; sourceTree = "<group>"; };
+		OBJ_23 /* JsonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRequest.swift; sourceTree = "<group>"; };
+		OBJ_24 /* ListFilesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFilesRequest.swift; sourceTree = "<group>"; };
+		OBJ_25 /* StorjBridgeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjBridgeOptions.swift; sourceTree = "<group>"; };
+		OBJ_26 /* StorjBucketMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjBucketMeta.swift; sourceTree = "<group>"; };
+		OBJ_27 /* StorjEncryptOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjEncryptOptions.swift; sourceTree = "<group>"; };
+		OBJ_28 /* StorjEncryptionCtx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjEncryptionCtx.swift; sourceTree = "<group>"; };
+		OBJ_29 /* StorjEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjEnv.swift; sourceTree = "<group>"; };
+		OBJ_30 /* StorjFileMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjFileMeta.swift; sourceTree = "<group>"; };
+		OBJ_31 /* StorjHTTPOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjHTTPOptions.swift; sourceTree = "<group>"; };
+		OBJ_32 /* StorjLogLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjLogLevels.swift; sourceTree = "<group>"; };
+		OBJ_33 /* StorjLogOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjLogOptions.swift; sourceTree = "<group>"; };
+		OBJ_34 /* StorjUploadOpts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjUploadOpts.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/koray/git/Storj/.build/checkouts/LibStorjSwift.git-3312832966776534734/Package.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/koray/git/Storj/.build/checkouts/SwiftyJSON.git-3043514560129222422/Package.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* StorjHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorjHolder.swift; sourceTree = "<group>"; };
+		"StorjHolder::StorjHolder::Product" /* StorjHolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StorjHolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"StorjHolder::StorjHolderTests::Product" /* StorjHolderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = StorjHolderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E23E3F61F7011CE00C6B6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E23E42E1F701ABC00C6B6E4 /* SwiftyJSON.framework in Frameworks */,
+				0E23E4251F70120D00C6B6E4 /* LibStorj.framework in Frameworks */,
+				0E23E43B1F7020AE00C6B6E4 /* Cartography.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4071F7011CE00C6B6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4121F7011CE00C6B6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_110 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_69 /* StorjHolder.framework in Frameworks */,
+				OBJ_70 /* LibStorj.framework in Frameworks */,
+				OBJ_71 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_84 /* LibStorj.framework in Frameworks */,
+				OBJ_85 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E23E3FA1F7011CE00C6B6E4 /* Storj */ = {
+			isa = PBXGroup;
+			children = (
+				0E23E4321F701EE700C6B6E4 /* HyperlinkTextField.swift */,
+				0E23E4331F701EE700C6B6E4 /* LabelExtensions.swift */,
+				0E23E4351F701EE700C6B6E4 /* register.html */,
+				0E23E3FB1F7011CE00C6B6E4 /* AppDelegate.swift */,
+				0E23E3FD1F7011CE00C6B6E4 /* ViewController.swift */,
+				0E23E3FF1F7011CE00C6B6E4 /* Assets.xcassets */,
+				0E23E4011F7011CE00C6B6E4 /* Main.storyboard */,
+				0E23E4041F7011CE00C6B6E4 /* Info.plist */,
+				0E23E4051F7011CE00C6B6E4 /* Storj.entitlements */,
+			);
+			path = Storj;
+			sourceTree = "<group>";
+		};
+		0E23E40D1F7011CE00C6B6E4 /* StorjTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E23E40E1F7011CE00C6B6E4 /* StorjTests.swift */,
+				0E23E4101F7011CE00C6B6E4 /* Info.plist */,
+			);
+			path = StorjTests;
+			sourceTree = "<group>";
+		};
+		0E23E4181F7011CE00C6B6E4 /* StorjUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E23E4191F7011CE00C6B6E4 /* StorjUITests.swift */,
+				0E23E41B1F7011CE00C6B6E4 /* Info.plist */,
+			);
+			path = StorjUITests;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* StorjHolderTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* StorjHolderTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* StorjHolderTests.swift */,
+			);
+			name = StorjHolderTests;
+			path = Tests/StorjHolderTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_13 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* LibStorj 1.0.1 */,
+				OBJ_36 /* SwiftyJSON 3.1.4 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* LibStorj 1.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* LibStorj */,
+				OBJ_35 /* Package.swift */,
+			);
+			name = "LibStorj 1.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_15 /* LibStorj */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Json */,
+				OBJ_18 /* LibStorj.swift */,
+				OBJ_19 /* Structs */,
+			);
+			name = LibStorj;
+			path = ".build/checkouts/LibStorjSwift.git-3312832966776534734/Sources/LibStorj";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* JsonObject.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* CStruct.swift */,
+				OBJ_21 /* CreateBucketRequest.swift */,
+				OBJ_22 /* GetBucketsRequest.swift */,
+				OBJ_23 /* JsonRequest.swift */,
+				OBJ_24 /* ListFilesRequest.swift */,
+				OBJ_25 /* StorjBridgeOptions.swift */,
+				OBJ_26 /* StorjBucketMeta.swift */,
+				OBJ_27 /* StorjEncryptOptions.swift */,
+				OBJ_28 /* StorjEncryptionCtx.swift */,
+				OBJ_29 /* StorjEnv.swift */,
+				OBJ_30 /* StorjFileMeta.swift */,
+				OBJ_31 /* StorjHTTPOptions.swift */,
+				OBJ_32 /* StorjLogLevels.swift */,
+				OBJ_33 /* StorjLogOptions.swift */,
+				OBJ_34 /* StorjUploadOpts.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* SwiftyJSON 3.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* Package.swift */,
+				OBJ_38 /* SwiftyJSON.swift */,
+			);
+			name = "SwiftyJSON 3.1.4";
+			path = ".build/checkouts/SwiftyJSON.git-3043514560129222422/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"StorjHolder::StorjHolderTests::Product" /* StorjHolderTests.xctest */,
+				"StorjHolder::StorjHolder::Product" /* StorjHolder.framework */,
+				"LibStorj::LibStorj::Product" /* LibStorj.framework */,
+				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+				0E23E3F91F7011CE00C6B6E4 /* Storj.app */,
+				0E23E40A1F7011CE00C6B6E4 /* StorjTests.xctest */,
+				0E23E4151F7011CE00C6B6E4 /* StorjUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				0E23E43E1F70210300C6B6E4 /* Cartography.framework.dSYM */,
+				0E23E43A1F7020AE00C6B6E4 /* Cartography.framework */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_13 /* Dependencies */,
+				0E23E3FA1F7011CE00C6B6E4 /* Storj */,
+				0E23E40D1F7011CE00C6B6E4 /* StorjTests */,
+				0E23E4181F7011CE00C6B6E4 /* StorjUITests */,
+				OBJ_39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* StorjHolder */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* StorjHolder */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* StorjHolder.swift */,
+			);
+			name = StorjHolder;
+			path = Sources/StorjHolder;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E23E3F81F7011CE00C6B6E4 /* Storj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E23E41C1F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "Storj" */;
+			buildPhases = (
+				0E23E3F51F7011CE00C6B6E4 /* Sources */,
+				0E23E3F61F7011CE00C6B6E4 /* Frameworks */,
+				0E23E3F71F7011CE00C6B6E4 /* Resources */,
+				0E23E4291F70120D00C6B6E4 /* Embed Frameworks */,
+				0E23E43D1F7020D000C6B6E4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E23E4281F70120D00C6B6E4 /* PBXTargetDependency */,
+				0E23E4311F701ABC00C6B6E4 /* PBXTargetDependency */,
+			);
+			name = Storj;
+			productName = Storj;
+			productReference = 0E23E3F91F7011CE00C6B6E4 /* Storj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E23E4091F7011CE00C6B6E4 /* StorjTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E23E41F1F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "StorjTests" */;
+			buildPhases = (
+				0E23E4061F7011CE00C6B6E4 /* Sources */,
+				0E23E4071F7011CE00C6B6E4 /* Frameworks */,
+				0E23E4081F7011CE00C6B6E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E23E40C1F7011CE00C6B6E4 /* PBXTargetDependency */,
+			);
+			name = StorjTests;
+			productName = StorjTests;
+			productReference = 0E23E40A1F7011CE00C6B6E4 /* StorjTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E23E4141F7011CE00C6B6E4 /* StorjUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E23E4221F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "StorjUITests" */;
+			buildPhases = (
+				0E23E4111F7011CE00C6B6E4 /* Sources */,
+				0E23E4121F7011CE00C6B6E4 /* Frameworks */,
+				0E23E4131F7011CE00C6B6E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E23E4171F7011CE00C6B6E4 /* PBXTargetDependency */,
+			);
+			name = StorjUITests;
+			productName = StorjUITests;
+			productReference = 0E23E4151F7011CE00C6B6E4 /* StorjUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		"LibStorj::LibStorj" /* LibStorj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_88 /* Build configuration list for PBXNativeTarget "LibStorj" */;
+			buildPhases = (
+				OBJ_91 /* Sources */,
+				OBJ_109 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_111 /* PBXTargetDependency */,
+			);
+			name = LibStorj;
+			productName = LibStorj;
+			productReference = "LibStorj::LibStorj::Product" /* LibStorj.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"LibStorj::SwiftPMPackageDescription" /* LibStorjPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_51 /* Build configuration list for PBXNativeTarget "LibStorjPackageDescription" */;
+			buildPhases = (
+				OBJ_54 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibStorjPackageDescription;
+			productName = LibStorjPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"StorjHolder::StorjHolder" /* StorjHolder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_78 /* Build configuration list for PBXNativeTarget "StorjHolder" */;
+			buildPhases = (
+				OBJ_81 /* Sources */,
+				OBJ_83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_86 /* PBXTargetDependency */,
+				OBJ_87 /* PBXTargetDependency */,
+			);
+			name = StorjHolder;
+			productName = StorjHolder;
+			productReference = "StorjHolder::StorjHolder::Product" /* StorjHolder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"StorjHolder::StorjHolderTests" /* StorjHolderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "StorjHolderTests" */;
+			buildPhases = (
+				OBJ_66 /* Sources */,
+				OBJ_68 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_72 /* PBXTargetDependency */,
+				OBJ_74 /* PBXTargetDependency */,
+				OBJ_76 /* PBXTargetDependency */,
+			);
+			name = StorjHolderTests;
+			productName = StorjHolderTests;
+			productReference = "StorjHolder::StorjHolderTests::Product" /* StorjHolderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"StorjHolder::SwiftPMPackageDescription" /* StorjHolderPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_45 /* Build configuration list for PBXNativeTarget "StorjHolderPackageDescription" */;
+			buildPhases = (
+				OBJ_48 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorjHolderPackageDescription;
+			productName = StorjHolderPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSONPackageDescription;
+			productName = SwiftyJSONPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				OBJ_115 /* Sources */,
+				OBJ_117 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					0E23E3F81F7011CE00C6B6E4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					0E23E4091F7011CE00C6B6E4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0E23E3F81F7011CE00C6B6E4;
+					};
+					0E23E4141F7011CE00C6B6E4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0E23E3F81F7011CE00C6B6E4;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "StorjHolder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"StorjHolder::SwiftPMPackageDescription" /* StorjHolderPackageDescription */,
+				"LibStorj::SwiftPMPackageDescription" /* LibStorjPackageDescription */,
+				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
+				"StorjHolder::StorjHolderTests" /* StorjHolderTests */,
+				"StorjHolder::StorjHolder" /* StorjHolder */,
+				"LibStorj::LibStorj" /* LibStorj */,
+				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
+				"StorjHolder::StorjHolderPackageTests::ProductTarget" /* StorjHolderPackageTests */,
+				"CLibStorj::CLibStorj::ProductTarget" /* CLibStorj */,
+				0E23E3F81F7011CE00C6B6E4 /* Storj */,
+				0E23E4091F7011CE00C6B6E4 /* StorjTests */,
+				0E23E4141F7011CE00C6B6E4 /* StorjUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E23E3F71F7011CE00C6B6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E23E4001F7011CE00C6B6E4 /* Assets.xcassets in Resources */,
+				0E23E4391F701EE800C6B6E4 /* register.html in Resources */,
+				0E23E4031F7011CE00C6B6E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4081F7011CE00C6B6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4131F7011CE00C6B6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E23E3F51F7011CE00C6B6E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E23E4371F701EE800C6B6E4 /* LabelExtensions.swift in Sources */,
+				0E23E3FE1F7011CE00C6B6E4 /* ViewController.swift in Sources */,
+				0E23E3FC1F7011CE00C6B6E4 /* AppDelegate.swift in Sources */,
+				0E23E4361F701EE800C6B6E4 /* HyperlinkTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4061F7011CE00C6B6E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E23E40F1F7011CE00C6B6E4 /* StorjTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E23E4111F7011CE00C6B6E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E23E41A1F7011CE00C6B6E4 /* StorjUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_116 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_49 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_55 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_67 /* StorjHolderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_82 /* StorjHolder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_92 /* JsonObject.swift in Sources */,
+				OBJ_93 /* LibStorj.swift in Sources */,
+				OBJ_94 /* CStruct.swift in Sources */,
+				OBJ_95 /* CreateBucketRequest.swift in Sources */,
+				OBJ_96 /* GetBucketsRequest.swift in Sources */,
+				OBJ_97 /* JsonRequest.swift in Sources */,
+				OBJ_98 /* ListFilesRequest.swift in Sources */,
+				OBJ_99 /* StorjBridgeOptions.swift in Sources */,
+				OBJ_100 /* StorjBucketMeta.swift in Sources */,
+				OBJ_101 /* StorjEncryptOptions.swift in Sources */,
+				OBJ_102 /* StorjEncryptionCtx.swift in Sources */,
+				OBJ_103 /* StorjEnv.swift in Sources */,
+				OBJ_104 /* StorjFileMeta.swift in Sources */,
+				OBJ_105 /* StorjHTTPOptions.swift in Sources */,
+				OBJ_106 /* StorjLogLevels.swift in Sources */,
+				OBJ_107 /* StorjLogOptions.swift in Sources */,
+				OBJ_108 /* StorjUploadOpts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E23E40C1F7011CE00C6B6E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E23E3F81F7011CE00C6B6E4 /* Storj */;
+			targetProxy = 0E23E40B1F7011CE00C6B6E4 /* PBXContainerItemProxy */;
+		};
+		0E23E4171F7011CE00C6B6E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E23E3F81F7011CE00C6B6E4 /* Storj */;
+			targetProxy = 0E23E4161F7011CE00C6B6E4 /* PBXContainerItemProxy */;
+		};
+		0E23E4281F70120D00C6B6E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LibStorj::LibStorj" /* LibStorj */;
+			targetProxy = 0E23E4271F70120D00C6B6E4 /* PBXContainerItemProxy */;
+		};
+		0E23E4311F701ABC00C6B6E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0E23E4301F701ABC00C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0E23E3EF1F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "StorjHolder::StorjHolderTests" /* StorjHolderTests */;
+			targetProxy = 0E23E3F41F7011B300C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "StorjHolder::StorjHolder" /* StorjHolder */;
+			targetProxy = 0E23E3F11F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LibStorj::LibStorj" /* LibStorj */;
+			targetProxy = 0E23E3F21F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0E23E3F31F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "LibStorj::LibStorj" /* LibStorj */;
+			targetProxy = 0E23E3EE1F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+		OBJ_87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 0E23E3F01F7011B200C6B6E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E23E4011F7011CE00C6B6E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E23E4021F7011CE00C6B6E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E23E41D1F7011CE00C6B6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Storj/Storj.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = Storj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.Storj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0E23E41E1F7011CE00C6B6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Storj/Storj.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = Storj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.Storj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		0E23E4201F7011CE00C6B6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = StorjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.StorjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storj.app/Contents/MacOS/Storj";
+			};
+			name = Debug;
+		};
+		0E23E4211F7011CE00C6B6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = StorjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.StorjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storj.app/Contents/MacOS/Storj";
+			};
+			name = Release;
+		};
+		0E23E4231F7011CE00C6B6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = StorjUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.StorjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Storj;
+			};
+			name = Debug;
+		};
+		0E23E4241F7011CE00C6B6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = StorjUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koraykoska.StorjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Storj;
+			};
+			name = Release;
+		};
+		OBJ_113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = StorjHolder.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = StorjHolder.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Release;
+		};
+		OBJ_120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/StorjHolderTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = StorjHolderTests;
+			};
+			name = Debug;
+		};
+		OBJ_65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/StorjHolderTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = StorjHolderTests;
+			};
+			name = Release;
+		};
+		OBJ_79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/StorjHolder_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				PRODUCT_BUNDLE_IDENTIFIER = StorjHolder;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = StorjHolder;
+			};
+			name = Debug;
+		};
+		OBJ_80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/StorjHolder_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				PRODUCT_BUNDLE_IDENTIFIER = StorjHolder;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = StorjHolder;
+			};
+			name = Release;
+		};
+		OBJ_89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/LibStorj_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				PRODUCT_BUNDLE_IDENTIFIER = LibStorj;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = LibStorj;
+			};
+			name = Debug;
+		};
+		OBJ_90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CLibStorj.git-150702570477471552",
+				);
+				INFOPLIST_FILE = StorjHolder.xcodeproj/LibStorj_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lstorj",
+					"-lcurl",
+					"-L/usr/local/Cellar/nettle/3.3/lib",
+					"-lnettle",
+					"-L/usr/local/Cellar/json-c/0.12/lib",
+					"-ljson-c",
+					"-L/usr/local/Cellar/libuv/1.14.0/lib",
+					"-luv",
+					"-lpthread",
+					"-ldl",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/include -I/usr/local/Cellar/nettle/3.3/include -I/usr/local/Cellar/json-c/0.12/include/json-c -I/usr/local/Cellar/libuv/1.14.0/include";
+				PRODUCT_BUNDLE_IDENTIFIER = LibStorj;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = LibStorj;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E23E41C1F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "Storj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E23E41D1F7011CE00C6B6E4 /* Debug */,
+				0E23E41E1F7011CE00C6B6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0E23E41F1F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "StorjTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E23E4201F7011CE00C6B6E4 /* Debug */,
+				0E23E4211F7011CE00C6B6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0E23E4221F7011CE00C6B6E4 /* Build configuration list for PBXNativeTarget "StorjUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E23E4231F7011CE00C6B6E4 /* Debug */,
+				0E23E4241F7011CE00C6B6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_112 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_119 /* Build configuration list for PBXAggregateTarget "StorjHolderPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_120 /* Debug */,
+				OBJ_121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_124 /* Build configuration list for PBXAggregateTarget "CLibStorj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_125 /* Debug */,
+				OBJ_126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "StorjHolder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_45 /* Build configuration list for PBXNativeTarget "StorjHolderPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_46 /* Debug */,
+				OBJ_47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_51 /* Build configuration list for PBXNativeTarget "LibStorjPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_52 /* Debug */,
+				OBJ_53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_57 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_63 /* Build configuration list for PBXNativeTarget "StorjHolderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_64 /* Debug */,
+				OBJ_65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_78 /* Build configuration list for PBXNativeTarget "StorjHolder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_79 /* Debug */,
+				OBJ_80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_88 /* Build configuration list for PBXNativeTarget "LibStorj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_89 /* Debug */,
+				OBJ_90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

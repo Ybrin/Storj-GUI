@@ -25,9 +25,9 @@ class HyperlinkTextField: NSTextField {
         let color = NSColor(red: 0, green: 0, blue: 238/255, alpha: 1)
 
         let attributedText = NSMutableAttributedString(string: stringValue)
-        attributedText.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.styleSingle.rawValue, range: textRange)
+        attributedText.addAttribute(NSAttributedStringKey.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: textRange)
         // attributedText.addAttribute(NSLinkAttributeName, value: "url", range: textRange)
-        attributedText.addAttribute(NSForegroundColorAttributeName, value: color, range: textRange)
+        attributedText.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: textRange)
 
         self.attributedStringValue = attributedText
     }
@@ -37,6 +37,6 @@ class HyperlinkTextField: NSTextField {
             return
         }
 
-        NSWorkspace.shared().open(url)
+        NSWorkspace.shared.open(url)
     }
 }

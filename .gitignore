@@ -55,3 +55,6 @@ fastlane/test_output
 
 # .idea folder
 .idea/
+
+# SPM
+.build
