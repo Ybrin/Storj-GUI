@@ -672,6 +672,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="854" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="854" height="480"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="sQH-N9-MZA"/>
                         </connections>
@@ -699,10 +700,10 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="EAW-GU-I3W">
-                                            <rect key="frame" x="16" y="16" width="180" height="97"/>
+                                            <rect key="frame" x="16" y="16" width="180" height="135"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-Yk-rsz">
-                                                    <rect key="frame" x="0.0" y="75" width="180" height="22"/>
+                                                    <rect key="frame" x="0.0" y="113" width="180" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="Gvk-L6-LWw"/>
                                                     </constraints>
@@ -713,7 +714,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-iv-QDO">
-                                                    <rect key="frame" x="0.0" y="37" width="180" height="22"/>
+                                                    <rect key="frame" x="0.0" y="75" width="180" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="nod-kv-yho"/>
                                                     </constraints>
@@ -726,6 +727,17 @@
                                                         </allowedInputSourceLocales>
                                                     </secureTextFieldCell>
                                                 </secureTextField>
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qNp-q8-H5a">
+                                                    <rect key="frame" x="0.0" y="37" width="180" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="2XJ-bE-oql"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Mnemonic" drawsBackground="YES" id="CXu-PC-TMe">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-Df-Gcj">
                                                     <rect key="frame" x="105" y="-7" width="81" height="32"/>
                                                     <constraints>
@@ -757,23 +769,26 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MLa-Yk-rsz" firstAttribute="top" secondItem="EAW-GU-I3W" secondAttribute="top" id="2Nm-LS-pIs"/>
+                                                <constraint firstItem="qNp-q8-H5a" firstAttribute="top" secondItem="dUO-iv-QDO" secondAttribute="bottom" constant="16" id="4Fz-SQ-pGe"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vy6-83-NP5" secondAttribute="bottom" id="9bb-Tf-45j"/>
                                                 <constraint firstItem="Vy6-83-NP5" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="AkQ-Ln-vva"/>
                                                 <constraint firstItem="dUO-iv-QDO" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="FON-Pq-VFa"/>
                                                 <constraint firstItem="dUO-iv-QDO" firstAttribute="top" secondItem="MLa-Yk-rsz" secondAttribute="bottom" constant="16" id="PLf-3G-jey"/>
                                                 <constraint firstItem="MLa-Yk-rsz" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="Pwy-YL-ZAK"/>
                                                 <constraint firstAttribute="trailing" secondItem="dgo-Df-Gcj" secondAttribute="trailing" id="QHh-TR-yCh"/>
+                                                <constraint firstItem="qNp-q8-H5a" firstAttribute="leading" secondItem="EAW-GU-I3W" secondAttribute="leading" id="Uaa-dN-r6t"/>
+                                                <constraint firstAttribute="trailing" secondItem="qNp-q8-H5a" secondAttribute="trailing" id="aUO-Q6-abi"/>
                                                 <constraint firstAttribute="trailing" secondItem="dUO-iv-QDO" secondAttribute="trailing" id="dH8-79-iVA"/>
                                                 <constraint firstAttribute="trailing" secondItem="MLa-Yk-rsz" secondAttribute="trailing" id="ghR-CG-IBS"/>
                                                 <constraint firstAttribute="bottom" secondItem="dgo-Df-Gcj" secondAttribute="bottom" id="h0K-Xy-qhE"/>
-                                                <constraint firstItem="dgo-Df-Gcj" firstAttribute="top" secondItem="dUO-iv-QDO" secondAttribute="bottom" constant="16" id="uZr-p8-srn"/>
+                                                <constraint firstItem="dgo-Df-Gcj" firstAttribute="top" secondItem="qNp-q8-H5a" secondAttribute="bottom" constant="16" id="vwT-xl-YhP"/>
                                             </constraints>
                                         </customView>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="Voe-oK-lAu">
-                                            <rect key="frame" x="0.0" y="113" width="212" height="221"/>
+                                            <rect key="frame" x="0.0" y="151" width="212" height="183"/>
                                             <subviews>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sou-0I-4Zp">
-                                                    <rect key="frame" x="16" y="63" width="180" height="95"/>
+                                                    <rect key="frame" x="16" y="44" width="180" height="95"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Sou-0I-4Zp" secondAttribute="height" multiplier="1200/630" id="1nd-B1-o1N"/>
                                                     </constraints>
@@ -807,7 +822,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="MLa-Yk-rsz" id="HfA-dQ-sCt"/>
                         <outlet property="loginBox" destination="V9b-LT-Hxb" id="6o2-ZX-6s0"/>
+                        <outlet property="mnemonicTextField" destination="qNp-q8-H5a" id="lcu-vo-FiT"/>
+                        <outlet property="passwordTextField" destination="dUO-iv-QDO" id="eTI-r1-fYY"/>
                         <outlet property="registerLabel" destination="MZR-fo-cat" id="3cd-Ad-PDg"/>
                         <outlet property="storjLogoContainer" destination="Sou-0I-4Zp" id="VIF-Ir-dIJ"/>
                     </connections>

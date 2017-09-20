@@ -19,9 +19,16 @@ class ViewController: NSViewController {
     @IBOutlet weak var registerLabel: NSTextFieldCell!
     @IBOutlet weak var storjLogoContainer: NSView!
 
+    @IBOutlet weak var emailTextField: NSTextField!
+    @IBOutlet weak var passwordTextField: NSSecureTextField!
+    @IBOutlet weak var mnemonicTextField: NSTextField!
+    
     var webView: WKWebView!
 
     var libStorj: LibStorj!
+
+    /// Saves the current logging in state
+    var loggingIn = false
 
     // MARK - Initialization
 
@@ -105,6 +112,51 @@ class ViewController: NSViewController {
     // MARK: - Actions
 
     @IBAction func loginButtonClicked(_ sender: NSButton) {
-        // let r = LibStorj.b
+        let user = emailTextField.stringValue
+        let pass = passwordTextField.stringValue
+        let mnemonic = mnemonicTextField.stringValue
+
+        guard !user.isEmpty && !pass.isEmpty && !mnemonic.isEmpty else {
+            sheetDialog(title: "Are you stupid?", text: "Yes/No")
+            return
+        }
+
+        guard LibStorj.mnemonicCheck(mnemonic: mnemonic) else {
+            sheetDialog(title: "Mnemonic is wrong!", text: "Please check your mnemonic")
+            return
+        }
+
+        let b = StorjBridgeOptions(
+            proto: ConstantHolder.APIValues.apiProto,
+            host: ConstantHolder.APIValues.apiUrl,
+            port: ConstantHolder.APIValues.apiPort,
+            user: user,
+            pass: pass
+        )
+        let e = StorjEncryptOptions(mnemonic: mnemonic)
+        libStorj = LibStorj(bridgeOptions: b, encryptOptions: e)
+
+        DispatchQueue.global().async {
+            _ = self.libStorj.getBuckets(completion: { (success, req) in
+                guard success, req.statusCode == 200 else {
+                    if req.statusCode == 401 {
+                        DispatchQueue.main.async {
+                            self.sheetDialog(title: "Email or Password wrong", text: "Please check your entered Email and Password for typos.")
+                        }
+                    } else {
+                        let status = req.statusCode
+                        let error = req.errorCode
+                        DispatchQueue.main.async {
+                            self.sheetDialog(title: "Something went wrong", text: "Oh no! The HTTP status code is \(status) and the error code is \(error). Please open an issue on Github.")
+                        }
+                    }
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    // TODO: Redirect User to Buckets List
+                }
+            })
+        }
     }
 }
